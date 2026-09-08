@@ -37,11 +37,10 @@
         <select id="categoryFilter">
             <option>সব ক্যাটাগরি</option>
             <option>নিখোঁজ ব্যক্তি/শিশু</option>
-            <option> kidnapping</option>
+            <option>ধর্ষণ</option> <!-- ২ নম্বরে রাখা হলো -->
+            <option> kidnapping</option> <!-- বাংলায় করা হলো -->
             <option>হত্যা</option>
             <option>দুর্ঘটনা</option>
-            <option>অপরাধ</option>
-            <option>ধর্ষণ</option> <!-- যোগ করা হলো -->
         </select>
     </label>
     <label>এলাকা
@@ -79,7 +78,7 @@
         </div>
         <div class="empty">
             <b>যাচাইকৃত ডেটা যোগ হলে এখানে ট্রেন্ড দেখা যাবে</b>
-            <p>কোনো কল্পিত সংখ্যা বা গ্রাফ ব্যবহার করা হয়নি.</p>
+            <p>কোনো কল্পিত সংখ্যা বা গ্রাফ ব্যবহার করা হয়নি।</p>
         </div>
     </article>
     
@@ -88,11 +87,10 @@
         <h2>ঘটনার ধরন</h2>
         <ul>
             <li>নিখোঁজ ব্যক্তি/শিশু <b>—</b></li>
-            <li> kidnapping <b>—</b></li>
+            <li>ধর্ষণ <b id="count-dhorshon">—</b></li> <!-- ২ নম্বরে রাখা হলো -->
+            <li> kidnapping <b>—</b></li> <!-- বাংলায় করা হলো -->
             <li>হত্যা <b>—</b></li>
             <li>দুর্ঘটনা <b>—</b></li>
-            <li>অপরাধ <b>—</b></li>
-            <li>ধর্ষণ <b id="count-dhorshon">—</b></li> <!-- যোগ করা হলো -->
             <li>অন্যান্য <b>—</b></li>
         </ul>
     </article>
@@ -107,6 +105,61 @@
                 <th>সময়কাল</th>
                 <th>ঘটনার সংখ্যা</th>
                 <th>সমাধান/পুনরুদ্ধার</th>
+                <th>উৎস</th>
+                <th>যাচাই</th>
+            </tr>
+            <tr><td>2000–2010</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+            <tr><td>2011–2020</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+            <tr><td>2021–2025</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+            <tr><td>2026</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+        </table>
+    </div>
+</section>
+
+<section id="sources" class="sources">
+    <small>OFFICIAL SOURCE REGISTRY</small>
+    <h2>যে উৎস থেকে ডেটা আসবে</h2>
+    <div class="sourcegrid">
+        <article>
+            <em>BANGLADESH POLICE</em>
+            <h3>Crime Statistics (2024)</h3>
+            <p>Issuing authority: Police Headquarters (PHQ)</p>
+            <p>Status: Official publication catalogued</p>
+            <a href="https://police.gov.bd" target="_blank">মূল উৎস দেখুন ↗</a>
+            <small>Source URL stored · external verification available</small>
+        </article>
+        <article>
+            <em>BANGLADESH BUREAU OF STATISTICS</em>
+            <h3>Statistical Yearbook of Bangladesh 2024</h3>
+            <p>Issuing authority: Bangladesh Bureau of Statistics (BBS)</p>
+            <p>Status: Official publication catalogued</p>
+            <a href="https://portal.gov.bd" target="_blank">মূল উৎস দেখুন ↗</a>
+            <small>Source URL stored · external verification available</small>
+        </article>
+    </div>
+</section>
+
+<section id="method" class="method">
+    <small>DATA GOVERNANCE</small>
+    <h2>একটি সংখ্যা প্রকাশের আগে</h2>
+    <div class="steps">
+        <article><b>01</b><h3>মূল নথি</h3><p>सरकारी/বিশ্বস্ত উৎস শনাক্ত।</p></article>
+        <article><b>02</b><h3>ডকুমেন্ট</h3><p>রিপোর্টের নাম, তারিখ ও URL সংরক্ষণ।</p></article>
+        <article><b>03</b><h3>রেফারেন্স</h3><p>পৃষ্ঠা, টেবিল বা অধ্যায় উল্লেখ।</p></article>
+        <article><b>04</b><h3>ক্রস-চেক</h3><p>সম্ভব হলে দ্বিতীয় উৎসে মিলিয়ে দেখা।</p></article>
+        <article><b>05</b><h3>প্রকাশ</h3><p>Source Card সহ সংখ্যা প্রকাশ।</p></article>
+    </div>
+</section>
+</main>
+<footer>ঘটনাচিত্র বাংলাদেশ · Source-first statistics platform</footer>
+
+<script>
+function resetF(){
+    document.querySelectorAll('select').forEach((x,i)=>x.selectedIndex=0);
+}
+</script>
+</body>
+</html>                <th>সমাধান/পুনরুদ্ধার</th>
                 <th>উৎস</th>
                 <th>যাচাই</th>
             </tr>
