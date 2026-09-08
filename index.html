@@ -1,80 +1,13 @@
-<head>
-<link rel="stylesheet" href="style.css">
-ঘটনাচিত্র বাংলাদেশ
-ড্যাশবোর্ডউৎসযাচাই পদ্ধতিউৎস দেখুন ↗
-STATISTICS DASHBOARD · SOURCE-FIRST
-বাংলাদেশের ঘটনার
-পরিসংখ্যান, যাচাইযোগ্যভাবে।
-প্রতিটি সংখ্যার সঙ্গে থাকবে মূল উৎস, রিপোর্টের নাম, প্রকাশের তারিখ এবং প্রয়োজন হলে পৃষ্ঠা/টেবিল নম্বর। যাচাইযোগ্য উৎস ছাড়া কোনো সংখ্যা প্রকাশ করা হবে না।
-
-সময়কাল
-সব বছর
-ঘটনার ধরন
-সব ক্যাটাগরি
-এলাকা
-সারা বাংলাদেশ
-ফিল্টার রিসেট
-ডেটা স্ট্যাটাস: এই ড্যাশবোর্ডে কোনো অনুমানভিত্তিক সংখ্যা নেই। Source verified না হওয়া পর্যন্ত সংখ্যা প্রকাশ হবে না।
-যাচাইকৃত রেকর্ড—Official source required
-চলতি সময়ের রেকর্ড—Data pending
-পুনরুদ্ধার / সমাধান—Data pending
-উৎস নথি2Source registry
-YEARLY TREND
-বছরভিত্তিক প্রবণতা
-ডেটা অপেক্ষমাণ
-যাচাইকৃত ডেটা যোগ হলে এখানে ট্রেন্ড দেখা যাবে
-কোনো কল্পিত সংখ্যা বা গ্রাফ ব্যবহার করা হয়নি।
-
-CATEGORY BREAKDOWN
-ঘটনার ধরন
-নিখোঁজ ব্যক্তি/শিশু —
-অপহরণ —
-হত্যা —
-দুর্ঘটনা —
-অন্যান্য —
-PERIOD COMPARISON
-সময়কাল তুলনা
-সময়কাল	ঘটনার সংখ্যা	সমাধান/পুনরুদ্ধার	উৎস	যাচাই
-2000–2010	—	—	Source required	Pending
-2011–2020	—	—	Source required	Pending
-2021–2025	—	—	Source required	Pending
-2026	—	—	Source required	Pending
-OFFICIAL SOURCE REGISTRY
-যে উৎস থেকে ডেটা আসবে
-BANGLADESH POLICE
-Crime Statistics (2024)
-Issuing authority: Police Headquarters (PHQ)
-
-Status: Official publication catalogued
-
-মূল উৎস দেখুন ↗Source URL stored · external verification available
-BANGLADESH BUREAU OF STATISTICS
-Statistical Yearbook of Bangladesh 2024
-Issuing authority: Bangladesh Bureau of Statistics (BBS)
-
-Status: Official publication catalogued
-
-মূল উৎস দেখুন ↗Source URL stored · external verification available
-DATA GOVERNANCE
-একটি সংখ্যা প্রকাশের আগে
-01
-মূল নথি
-সরকারি/বিশ্বস্ত উৎস শনাক্ত।
-
-02
-ডকুমেন্ট
-রিপোর্টের নাম, তারিখ ও URL সংরক্ষণ।
-
-03
-রেফারেন্স
-পৃষ্ঠা, টেবিল বা অধ্যায় উল্লেখ।
-
-04
-ক্রস-চেক
-সম্ভব হলে দ্বিতীয় উৎসে মিলিয়ে দেখা।
-
-05
-প্রকাশ
-Source Card সহ সংখ্যা প্রকাশ।
-
-ঘটনাচিত্র বাংলাদেশ · Source-first statistics platform
+<!doctype html><html lang="bn"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ঘটনাচিত্র বাংলাদেশ — Statistics Dashboard</title><link rel="stylesheet" href="style.css"></head><body>
+<header><div class="brand"><b>ঘটনাচিত্র</b> বাংলাদেশ</div><nav><a href="#dashboard">ড্যাশবোর্ড</a><a href="#sources">উৎস</a><a href="#method">যাচাই পদ্ধতি</a><a class="btn" href="#sources">উৎস দেখুন ↗</a></nav></header>
+<main id="dashboard">
+<section class="hero"><small>STATISTICS DASHBOARD · SOURCE-FIRST</small><h1>বাংলাদেশের ঘটনার<br><em>পরিসংখ্যান, যাচাইযোগ্যভাবে।</em></h1><p>প্রতিটি সংখ্যার সঙ্গে থাকবে মূল উৎস, রিপোর্টের নাম, প্রকাশের তারিখ এবং প্রয়োজন হলে পৃষ্ঠা/টেবিল নম্বর। যাচাইযোগ্য উৎস ছাড়া কোনো সংখ্যা প্রকাশ করা হবে না।</p></section>
+<section class="filters"><label>সময়কাল<select id="period"><option>সব বছর</option><option>2000–2010</option><option>2011–2020</option><option>2021–2025</option><option>2026</option></select></label><label>ঘটনার ধরন<select><option>সব ক্যাটাগরি</option><option>নিখোঁজ ব্যক্তি/শিশু</option><option>অপহরণ</option><option>হত্যা</option><option>দুর্ঘটনা</option><option>অপরাধ</option></select></label><label>এলাকা<select><option>সারা বাংলাদেশ</option><option>ঢাকা বিভাগ</option><option>চট্টগ্রাম বিভাগ</option><option>রাজশাহী বিভাগ</option><option>খুলনা বিভাগ</option><option>বরিশাল বিভাগ</option><option>সিলেট বিভাগ</option><option>রংপুর বিভাগ</option><option>ময়মনসিংহ বিভাগ</option></select></label><button onclick="resetF()">ফিল্টার রিসেট</button></section>
+<div class="notice"><b>ডেটা স্ট্যাটাস:</b> এই ড্যাশবোর্ডে কোনো অনুমানভিত্তিক সংখ্যা নেই। Source verified না হওয়া পর্যন্ত সংখ্যা প্রকাশ হবে না।</div>
+<section class="kpis"><article><small>যাচাইকৃত রেকর্ড</small><b>—</b><span>Official source required</span></article><article><small>চলতি সময়ের রেকর্ড</small><b>—</b><span>Data pending</span></article><article><small>পুনরুদ্ধার / সমাধান</small><b>—</b><span>Data pending</span></article><article><small>উৎস নথি</small><b>2</b><span>Source registry</span></article></section>
+<section class="grid"><article class="panel"><div class="head"><div><small>YEARLY TREND</small><h2>বছরভিত্তিক প্রবণতা</h2></div><i>ডেটা অপেক্ষমাণ</i></div><div class="empty"><b>যাচাইকৃত ডেটা যোগ হলে এখানে ট্রেন্ড দেখা যাবে</b><p>কোনো কল্পিত সংখ্যা বা গ্রাফ ব্যবহার করা হয়নি।</p></div></article>
+<article class="panel"><small>CATEGORY BREAKDOWN</small><h2>ঘটনার ধরন</h2><ul><li>নিখোঁজ ব্যক্তি/শিশু <b>—</b></li><li>অপহরণ <b>—</b></li><li>হত্যা <b>—</b></li><li>দুর্ঘটনা <b>—</b></li><li>অন্যান্য <b>—</b></li></ul></article></section>
+<section class="panel comparison"><small>PERIOD COMPARISON</small><h2>সময়কাল তুলনা</h2><div class="table"><table><tr><th>সময়কাল</th><th>ঘটনার সংখ্যা</th><th>সমাধান/পুনরুদ্ধার</th><th>উৎস</th><th>যাচাই</th></tr><tr><td>2000–2010</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr><tr><td>2011–2020</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr><tr><td>2021–2025</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr><tr><td>2026</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr></table></div></section>
+<section id="sources" class="sources"><small>OFFICIAL SOURCE REGISTRY</small><h2>যে উৎস থেকে ডেটা আসবে</h2><div class="sourcegrid"><article><em>BANGLADESH POLICE</em><h3>Crime Statistics (2024)</h3><p>Issuing authority: Police Headquarters (PHQ)</p><p>Status: Official publication catalogued</p><a href="https://www.police.gov.bd/index.php/en/january_2020?page=1" target="_blank">মূল উৎস দেখুন ↗</a><small>Source URL stored · external verification available</small></article><article><em>BANGLADESH BUREAU OF STATISTICS</em><h3>Statistical Yearbook of Bangladesh 2024</h3><p>Issuing authority: Bangladesh Bureau of Statistics (BBS)</p><p>Status: Official publication catalogued</p><a href="https://bbs.portal.gov.bd/site/page/29855dc1-f2b4-4dc0-9073-f692361112da/" target="_blank">মূল উৎস দেখুন ↗</a><small>Source URL stored · external verification available</small></article></div></section>
+<section id="method" class="method"><small>DATA GOVERNANCE</small><h2>একটি সংখ্যা প্রকাশের আগে</h2><div class="steps"><article><b>01</b><h3>মূল নথি</h3><p>সরকারি/বিশ্বস্ত উৎস শনাক্ত।</p></article><article><b>02</b><h3>ডকুমেন্ট</h3><p>রিপোর্টের নাম, তারিখ ও URL সংরক্ষণ।</p></article><article><b>03</b><h3>রেফারেন্স</h3><p>পৃষ্ঠা, টেবিল বা অধ্যায় উল্লেখ।</p></article><article><b>04</b><h3>ক্রস-চেক</h3><p>সম্ভব হলে দ্বিতীয় উৎসে মিলিয়ে দেখা।</p></article><article><b>05</b><h3>প্রকাশ</h3><p>Source Card সহ সংখ্যা প্রকাশ।</p></article></div></section>
+</main><footer>ঘটনাচিত্র বাংলাদেশ · Source-first statistics platform</footer><script>function resetF(){document.querySelectorAll('select').forEach((x,i)=>x.selectedIndex=i===2?0:0)}</script></body></html>
