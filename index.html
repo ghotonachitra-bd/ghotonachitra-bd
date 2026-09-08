@@ -7,211 +7,185 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <div class="brand"><b>ঘটনাচিত্র</b> বাংলাদেশ</div>
-    <nav>
-        <a href="#dashboard">ড্যাশবোর্ড</a>
-        <a href="#sources">উৎস</a>
-        <a href="#method">যাচাই পদ্ধতি</a>
-        <a class="btn" href="#sources">উৎস দেখুন ↗</a>
-    </nav>
-</header>
-<main id="dashboard">
-<section class="hero">
-    <small>STATISTICS DASHBOARD · SOURCE-FIRST</small>
-    <h1>বাংলাদেশের ঘটনার<br><em>পরিসংখ্যান, যাচাইযোগ্যভাবে।</em></h1>
-    <p>প্রতিটি সংখ্যার সঙ্গে থাকবে মূল উৎস, রিপোর্টের নাম, প্রকাশের তারিখ এবং প্রয়োজন হলে পৃষ্ঠা/টেবিল নম্বর। যাচাইযোগ্য উৎস ছাড়া কোনো সংখ্যা প্রকাশ করা হবে না।</p>
-</section>
 
-<section class="filters">
-    <label>সময়কাল
-        <select id="period">
-            <option>সব বছর</option>
-            <option>2000–2010</option>
-            <option>2011–2020</option>
-            <option>2021–2025</option>
-            <option>2026</option>
-        </select>
-    </label>
-    <label>ঘটনার ধরন
-        <select id="categoryFilter">
-            <option>সব ক্যাটাগরি</option>
-            <option>নিখোঁজ ব্যক্তি/শিশু</option>
-            <option>ধর্ষণ</option> <!-- ২ নম্বরে রাখা হলো -->
-            <option> kidnapping</option> <!-- বাংলায় করা হলো -->
-            <option>হত্যা</option>
-            <option>দুর্ঘটনা</option>
-        </select>
-    </label>
-    <label>এলাকা
-        <select id="locationFilter">
-            <option>সারা বাংলাদেশ</option>
-            <option>ঢাকা বিভাগ</option>
-            <option>চট্টগ্রাম বিভাগ</option>
-            <option>রাজশাহী বিভাগ</option>
-            <option>খুলনা বিভাগ</option>
-            <option>বরিশাল বিভাগ</option>
-            <option>সিলেট বিভাগ</option>
-            <option>রংপুর বিভাগ</option>
-            <option>ময়মনসিংহ বিভাগ</option>
-        </select>
-    </label>
-    <button onclick="resetF()">ফিল্টার রিসেট</button>
-</section>
+    <header>
+        <div class="brand"><b>ঘটনাচিত্র</b> বাংলাদেশ</div>
+        <nav>
+            <a href="#dashboard">ড্যাশবোর্ড</a>
+            <a href="#sources">উৎস</a>
+            <a href="#method">যাচাই পদ্ধতি</a>
+            <a class="btn" href="#sources">উৎস দেখুন ↗</a>
+        </nav>
+    </header>
 
-<div class="notice">
-    <b>ডেটা স্ট্যাটাস:</b> এই ড্যাশবোর্ডে কোনো অনুমানভিত্তিক সংখ্যা নেই। Source verified না হওয়া পর্যন্ত সংখ্যা প্রকাশ হবে না।
-</div>
+    <main id="dashboard">
+        <section class="hero">
+            <small>STATISTICS DASHBOARD · SOURCE-FIRST</small>
+            <h1>বাংলাদেশের ঘটনার<br><em>পরিসংখ্যান, যাচাইযোগ্যভাবে।</em></h1>
+            <p>প্রতিটি সংখ্যার সঙ্গে থাকবে মূল উৎস, রিপোর্টের নাম, প্রকাশের তারিখ এবং প্রয়োজন হলে পৃষ্ঠা/টেবিল নম্বর। যাচাইযোগ্য উৎস ছাড়া কোনো সংখ্যা প্রকাশ করা হবে না।</p>
+        </section>
 
-<section class="kpis">
-    <article><small>যাচাইকৃত রেকর্ড</small><b>—</b><span>Official source required</span></article>
-    <article><small>চলতি সময়ের রেকর্ড</small><b>—</b><span>Data pending</span></article>
-    <article><small>পুনরুদ্ধার / সমাধান</small><b>—</b><span>Data pending</span></article>
-    <article><small>উৎস নথি</small><b>2</b><span>Source registry</span></article>
-</section>
+        <section class="filters">
+            <label>সময়কাল
+                <select id="period">
+                    <option>সব বছর</option>
+                    <option>২০০০–২০১০</option>
+                    <option>২০১১–২০২০</option>
+                    <option>২০২১–২০২৫</option>
+                    <option>২০২৬</option>
+                </select>
+            </label>
+            <label>ঘটনার ধরন
+                <select id="categoryFilter">
+                    <option>সব ক্যাটাগরি</option>
+                    <option>নিখোঁজ ব্যক্তি/শিশু</option>
+                    <option>ধর্ষণ</option>
+                    <option> kidnapping</option>
+                    <option>হত্যা</option>
+                    <option>দুর্ঘটনা</option>
+                </select>
+            </label>
+            <label>এলাকা
+                <select id="locationFilter">
+                    <option>سارا বাংলাদেশ</option>
+                    <option>ঢাকা বিভাগ</option>
+                    <option>চট্টগ্রাম বিভাগ</option>
+                    <option>রাজশাহী বিভাগ</option>
+                    <option>খুলনা বিভাগ</option>
+                    <option>বরিশাল বিভাগ</option>
+                    <option>সিলেট বিভাগ</option>
+                    <option>রংপুর বিভাগ</option>
+                    <option>ময়মনসিংহ বিভাগ</option>
+                </select>
+            </label>
+            <button onclick="resetF()">ফিল্টার রিসেট</button>
+        </section>
 
-<section class="grid">
-    <article class="panel">
-        <div class="head">
-            <div><small>YEARLY TREND</small><h2>বছরভিত্তিক প্রবণতা</h2></div>
-            <i>ডেটা অপেক্ষমাণ</i>
+        <div class="notice">
+            <b>ডেটা স্ট্যাটাস:</b> এই ড্যাশবোর্ডে কোনো অনুমানভিত্তিক সংখ্যা নেই। Source verified না হওয়া পর্যন্ত সংখ্যা প্রকাশ হবে না।
         </div>
-        <div class="empty">
-            <b>যাচাইকৃত ডেটা যোগ হলে এখানে ট্রেন্ড দেখা যাবে</b>
-            <p>কোনো কল্পিত সংখ্যা বা গ্রাফ ব্যবহার করা হয়নি।</p>
-        </div>
-    </article>
-    
-    <article class="panel">
-        <small>CATEGORY BREAKDOWN</small>
-        <h2>ঘটনার ধরন</h2>
-        <ul>
-            <li>নিখোঁজ ব্যক্তি/শিশু <b>—</b></li>
-            <li>ধর্ষণ <b id="count-dhorshon">—</b></li> <!-- ২ নম্বরে রাখা হলো -->
-            <li> kidnapping <b>—</b></li> <!-- বাংলায় করা হলো -->
-            <li>হত্যা <b>—</b></li>
-            <li>দুর্ঘটনা <b>—</b></li>
-            <li>অন্যান্য <b>—</b></li>
-        </ul>
-    </article>
-</section>
 
-<section class="panel comparison">
-    <small>PERIOD COMPARISON</small>
-    <h2>সময়কাল তুলনা</h2>
-    <div class="table">
-        <table>
-            <tr>
-                <th>সময়কাল</th>
-                <th>ঘটনার সংখ্যা</th>
-                <th>সমাধান/পুনরুদ্ধার</th>
-                <th>উৎস</th>
-                <th>যাচাই</th>
-            </tr>
-            <tr><td>2000–2010</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
-            <tr><td>2011–2020</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
-            <tr><td>2021–2025</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
-            <tr><td>2026</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
-        </table>
-    </div>
-</section>
+        <section class="kpis">
+            <article><small>যাচাইকৃত রেকর্ড</small><b>—</b><span>Official source required</span></article>
+            <article><small>চলতি সময়ের রেকর্ড</small><b>—</b><span>Data pending</span></article>
+            <article><small>পুনরুদ্ধার / সমাধান</small><b>—</b><span>Data pending</span></article>
+            <article><small>উৎস নথি</small><b>2</b><span>Source registry</span></article>
+        </section>
 
-<section id="sources" class="sources">
-    <small>OFFICIAL SOURCE REGISTRY</small>
-    <h2>যে উৎস থেকে ডেটা আসবে</h2>
-    <div class="sourcegrid">
-        <article>
-            <em>BANGLADESH POLICE</em>
-            <h3>Crime Statistics (2024)</h3>
-            <p>Issuing authority: Police Headquarters (PHQ)</p>
-            <p>Status: Official publication catalogued</p>
-            <a href="https://police.gov.bd" target="_blank">মূল উৎস দেখুন ↗</a>
-            <small>Source URL stored · external verification available</small>
-        </article>
-        <article>
-            <em>BANGLADESH BUREAU OF STATISTICS</em>
-            <h3>Statistical Yearbook of Bangladesh 2024</h3>
-            <p>Issuing authority: Bangladesh Bureau of Statistics (BBS)</p>
-            <p>Status: Official publication catalogued</p>
-            <a href="https://portal.gov.bd" target="_blank">মূল উৎস দেখুন ↗</a>
-            <small>Source URL stored · external verification available</small>
-        </article>
-    </div>
-</section>
+        <section class="grid">
+            <article class="panel">
+                <div class="head">
+                    <div><small>YEARLY TREND</small><h2>বছরভিত্তিক প্রবণতা</h2></div>
+                    <i>ডেটা অপেক্ষমাণ</i>
+                </div>
+                <div class="empty">
+                    <b>যাচাইকৃত ডেটা যোগ হলে এখানে ট্রেন্ড দেখা যাবে</b>
+                    <p>কোনো কল্পিত সংখ্যা বা গ্রাফ ব্যবহার করা হয়নি।</p>
+                </div>
+            </article>
+            
+            <article class="panel">
+                <small>CATEGORY BREAKDOWN</small>
+                <h2>ঘটনার ধরন</h2>
+                <ul>
+                    <li>নিখোঁজ ব্যক্তি/শিশু <b>—</b></li>
+                    <li>ধর্ষণ <b id="count-dhorshon">—</b></li>
+                    <li> kidnapping <b>—</b></li>
+                    <li>হত্যা <b>—</b></li>
+                    <li>দুর্ঘটনা <b>—</b></li>
+                    <li>অন্যান্য <b>—</b></li>
+                </ul>
+            </article>
+        </section>
 
-<section id="method" class="method">
-    <small>DATA GOVERNANCE</small>
-    <h2>একটি সংখ্যা প্রকাশের আগে</h2>
-    <div class="steps">
-        <article><b>01</b><h3>মূল নথি</h3><p>सरकारी/বিশ্বস্ত উৎস শনাক্ত।</p></article>
-        <article><b>02</b><h3>ডকুমেন্ট</h3><p>রিপোর্টের নাম, তারিখ ও URL সংরক্ষণ।</p></article>
-        <article><b>03</b><h3>রেফারেন্স</h3><p>পৃষ্ঠা, টেবিল বা অধ্যায় উল্লেখ।</p></article>
-        <article><b>04</b><h3>ক্রস-চেক</h3><p>সম্ভব হলে দ্বিতীয় উৎসে মিলিয়ে দেখা।</p></article>
-        <article><b>05</b><h3>প্রকাশ</h3><p>Source Card সহ সংখ্যা প্রকাশ।</p></article>
-    </div>
-</section>
-</main>
-<footer>ঘটনাচিত্র বাংলাদেশ · Source-first statistics platform</footer>
+        <section class="panel comparison">
+            <small>PERIOD COMPARISON</small>
+            <h2>সময়কাল তুলনা</h2>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>সময়কাল</th>
+                            <th>ঘটনার সংখ্যা</th>
+                            <th>সমাধান/পুনরুদ্ধার</th>
+                            <th>উৎস</th>
+                            <th>যাচাই</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>২০০০–২০০১</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০০১–২০০২</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০০২–২০০৩</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০০৩–২০০৪</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০০৪–২০০৫</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০০৫–২০০৬</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০০৬–২০০৭</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০০৭–২০০৮</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০০৮–২০০৯</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০০৯–২০১০</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০১০–২০১১</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০১১–২০১২</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০১২–২০১৩</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০১৩–২০১৪</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০১৪–২০১৫</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০১৫–২০১৬</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০১৬–২০১৭</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০১৭–২০১৮</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০১৮–২০১৯</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০১৯–২০২০</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০২০–২০২১</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০২১–২০২২</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০২২–২০২৩</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০২৩–২০২৪</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০২৪–২০২৫</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                        <tr><td>২০২৫–২০২৬</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-<script>
-function resetF(){
-    document.querySelectorAll('select').forEach((x,i)=>x.selectedIndex=0);
-}
-</script>
-</body>
-</html>                <th>সমাধান/পুনরুদ্ধার</th>
-                <th>উৎস</th>
-                <th>যাচাই</th>
-            </tr>
-            <tr><td>2000–2010</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
-            <tr><td>2011–2020</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
-            <tr><td>2021–2025</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
-            <tr><td>2026</td><td>—</td><td>—</td><td>Source required</td><td>Pending</td></tr>
-        </table>
-    </div>
-</section>
+        <section id="sources" class="sources">
+            <small>OFFICIAL SOURCE REGISTRY</small>
+            <h2>যে উৎস থেকে ডেটা আসবে</h2>
+            <div class="sourcegrid">
+                <article>
+                    <em>BANGLADESH POLICE</em>
+                    <h3>Crime Statistics (2024)</h3>
+                    <p>Issuing authority: Police Headquarters (PHQ)</p>
+                    <p>Status: Official publication catalogued</p>
+                    <a href="https://police.gov.bd" target="_blank">মূল উৎস দেখুন ↗</a>
+                    <small>Source URL stored · external verification available</small>
+                </article>
+                <article>
+                    <em>BANGLADESH BUREAU OF STATISTICS</em>
+                    <h3>Statistical Yearbook of Bangladesh 2024</h3>
+                    <p>Issuing authority: Bangladesh Bureau of Statistics (BBS)</p>
+                    <p>Status: Official publication catalogued</p>
+                    <a href="https://portal.gov.bd" target="_blank">মূল উৎস দেখুন ↗</a>
+                    <small>Source URL stored · external verification available</small>
+                </article>
+            </div>
+        </section>
 
-<section id="sources" class="sources">
-    <small>OFFICIAL SOURCE REGISTRY</small>
-    <h2>যে উৎস থেকে ডেটা আসবে</h2>
-    <div class="sourcegrid">
-        <article>
-            <em>BANGLADESH POLICE</em>
-            <h3>Crime Statistics (2024)</h3>
-            <p>Issuing authority: Police Headquarters (PHQ)</p>
-            <p>Status: Official publication catalogued</p>
-            <a href="https://www.police.gov.bd/index.php/en/january_2020?page=1" target="_blank">মূল উৎস দেখুন ↗</a>
-            <small>Source URL stored · external verification available</small>
-        </article>
-        <article>
-            <em>BANGLADESH BUREAU OF STATISTICS</em>
-            <h3>Statistical Yearbook of Bangladesh 2024</h3>
-            <p>Issuing authority: Bangladesh Bureau of Statistics (BBS)</p>
-            <p>Status: Official publication catalogued</p>
-            <a href="https://bbs.portal.gov.bd/site/page/29855dc1-f2b4-4dc0-9073-f692361112da/" target="_blank">মূল উৎস দেখুন ↗</a>
-            <small>Source URL stored · external verification available</small>
-        </article>
-    </div>
-</section>
+        <section id="method" class="method">
+            <small>DATA GOVERNANCE</small>
+            <h2>একটি সংখ্যা প্রকাশের আগে</h2>
+            <div class="steps">
+                <article><b>01</b><h3>মূল নথি</h3><p>সরকারি/বিশ্বস্ত উৎস শনাক্ত।</p></article>
+                <article><b>02</b><h3>ডকুমেন্ট</h3><p>রিপোর্টের নাম, তারিখ ও URL সংরক্ষণ।</p></article>
+                <article><b>03</b><h3>রেফারেন্স</h3><p>পৃষ্ঠা, টেবিল বা অধ্যায় উল্লেখ।</p></article>
+                <article><b>04</b><h3>ক্রস-চেক</h3><p>সম্ভব হলে দ্বিতীয় উৎসে মিলিয়ে দেখা।</p></article>
+                <article><b>05</b><h3>প্রকাশ</h3><p>Source Card সহ সংখ্যা প্রকাশ।</p></article>
+            </div>
+        </section>
+    </main>
 
-<section id="method" class="method">
-    <small>DATA GOVERNANCE</small>
-    <h2>একটি সংখ্যা প্রকাশের আগে</h2>
-    <div class="steps">
-        <article><b>01</b><h3>মূল নথি</h3><p>सरकारी/বিশ্বস্ত উৎস শনাক্ত।</p></article>
-        <article><b>02</b><h3>ডকুমেন্ট</h3><p>রিপোর্টের নাম, তারিখ ও URL সংরক্ষণ।</p></article>
-        <article><b>03</b><h3>রেফারেন্স</h3><p>পৃষ্ঠা, টেবিল বা অধ্যায় উল্লেখ।</p></article>
-        <article><b>04</b><h3>ক্রস-চেক</h3><p>সম্ভব হলে দ্বিতীয় উৎসে মিলিয়ে দেখা।</p></article>
-        <article><b>05</b><h3>প্রকাশ</h3><p>Source Card সহ সংখ্যা প্রকাশ।</p></article>
-    </div>
-</section>
-</main>
-<footer>ঘটনাচিত্র বাংলাদেশ · Source-first statistics platform</footer>
+    <footer>ঘটনাচিত্র বাংলাদেশ · Source-first statistics platform</footer>
 
-<script>
-function resetF(){
-    document.querySelectorAll('select').forEach((x,i)=>x.selectedIndex=0);
-}
-</script>
+    <script>
+    function resetF(){
+        document.querySelectorAll('select').forEach((x)=>x.selectedIndex=0);
+    }
+    </script>
 </body>
 </html>
