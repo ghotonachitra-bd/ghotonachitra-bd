@@ -1,13 +1,6 @@
-# ঘটনাচিত্র — Source-first V2
-এই সংস্করণে বাস্তব সংখ্যা না বসিয়ে প্রথমে Official Source Registry তৈরি করা হয়েছে।
-
-## ইতিমধ্যে যুক্ত official source
-1. Bangladesh Police — Crime Statistics (2024), PHQ, uploaded 09-01-2025.
-2. Bangladesh Bureau of Statistics — Statistical Yearbook of Bangladesh 2024, uploaded 21-08-2024.
-
-## নিয়ম
-- প্রতিটি সংখ্যা একটি source_id-এর সঙ্গে যুক্ত হবে।
-- Source record: issuing authority, report title, publication/upload date, original URL, page/table/section reference, retrieval date, verification status।
-- Official data ও community reports আলাদা।
-- অভিযোগ ≠ প্রমাণিত অপরাধ।
-- কোনো উৎস পাওয়া না গেলে সংখ্যা প্রকাশ করা হবে না।
+ঘটনাচিত্র — Statistics Dashboard
+Statistics Dashboard প্রথম অগ্রাধিকার। কোনো অনুমানভিত্তিক সংখ্যা রাখা হয়নি। Official source ছাড়া সংখ্যা প্রকাশ করা হবে না।
+GitHub update
+এই তিনটি ফাইল repository-তে replace করুন: index.html, style.css, README.md। Commit করলে Vercel main branch থেকে নতুন deployment করবে।
+Dashboard
+Filters, KPI cards, yearly trend placeholder, category breakdown, period comparison, official source registry এবং data-governance workflow আছে। পরবর্তী ধাপে verified dataset/API যুক্ত করে — জায়গায় বাস্তব সংখ্যা বসানো হবে।
